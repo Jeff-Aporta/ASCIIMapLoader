@@ -266,6 +266,16 @@ function PaginaASCIIMapLoader({
                 Este es un objeto que contiene mapeos personales de ASCII que uso frecuentemente en mis proyectos.
                 <br />
                 <br />
+                <h2>
+                    Carga general
+                </h2>
+                <br />
+                Se puede cargar todo el objeto con el siguiente comando.
+                <Code language="js" linenumbers={false}>{`
+                    Object.values(ASCII_MAPS).forEach((map) => {
+                        runASCIIMapLoad_inLine(map);
+                    });
+                `}</Code>
                 {
                     Object.entries(ASCII_MAPS).map(([k, map]) => {
                         return ([
@@ -275,6 +285,11 @@ function PaginaASCIIMapLoader({
                                         {k}
                                     </Resaltar>
                                 </h2>
+                                <br />
+                                <CodeInline language="js">
+                                    runASCIIMapLoad(ASCII_MAPS.{k});
+                                </CodeInline>
+                                <br />
                                 <pre className="prettyprint mini lang-jsx linenums:1">
                                     {eliminarTabulacionesInnecesarias(map.replaceAll("//", "/\u2060/"))}
                                 </pre>
@@ -301,30 +316,4 @@ function PaginaASCIIMapLoader({
         renglones = renglones.map((e, i) => e.slice(tabulaciones));
         return renglones.join('\n');
     }
-}
-
-function ChipCode(props) {
-    let label = props.label;
-    delete props.label;
-    return (
-        <Chip
-            {...props}
-            style={{
-                backgroundColor: props.nocode ? "rgba(0,0,0,0.4)" : "black",
-                color: "white",
-            }}
-            label={
-                <Code
-                    className={`
-                        solo-texto
-                        ${props.nocode ? "nocode" : ""}
-                    `}
-                    linenumbers={false}
-                    esCopiable={false}
-                >
-                    {label}
-                </Code>
-            }
-        />
-    );
 }
