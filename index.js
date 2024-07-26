@@ -1,4 +1,4 @@
-function runASCIIMapLoad_inLine(asciiMaploader) {
+function runASCIIMapLoader_inLine(asciiMaploader) {
   recorrerRecursivamenteTodosLosNodos(ASCIIMapLoader2JSON(asciiMaploader));
 
   function recorrerRecursivamenteTodosLosNodos(node, rutaAcumulada) {

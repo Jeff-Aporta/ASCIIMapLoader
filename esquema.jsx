@@ -41,6 +41,25 @@ function PaginaASCIIMapLoader({
                 />
             </h1>
             <br />
+            <p>
+                <b>ASCII Map Loader</b> es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un <b>HTML</b>.
+                <br />
+                <ul className="punto-centrico">
+                    <li>
+                        Se dibujan las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.
+                    </li>
+                    <li>
+                        Tiene decoradores con emojis para indicar el tipo de archivos, directorios y comandos.
+                    </li>
+                    <li>
+                        Tiene funciones primitivas que permiten ejecutar comandos.
+                    </li>
+                    <li>
+                        Soporta archivos de tipo <b>JavaScript</b>, <b>React (JSX)</b> y <b>CSS</b>.
+                    </li>
+                </ul>
+            </p>
+            <br />
             <EnvolventeSeccion
                 elevation={1}
                 style={{
@@ -48,16 +67,6 @@ function PaginaASCIIMapLoader({
                     borderRadius: "20px",
                 }}
             >
-                <h1>
-                    Resumen
-                </h1>
-                <p>
-                    <b>ASCII Map Loader</b> es una herramienta que permite cargar dependencias de forma dinámica en un proyecto web.
-                    <br />
-                    <br />
-                    Se basa en un mapa ASCII que contiene las rutas de las dependencias a cargar.
-                </p>
-                <br />
                 <h1>
                     Usar con CDN
                 </h1>
@@ -87,8 +96,7 @@ function PaginaASCIIMapLoader({
                 </h2>
                 <br />
                 En este ejemplo se cargan las dependencias de React, Material-UI y Babel de forma dinámica.
-                <Code>{
-                    eliminarTabulacionesInnecesarias(`
+                <Code>{`
                             runASCIIMapLoad_inLine(\`
                                 ➤🌐 https://unpkg.com
                                 │
@@ -97,12 +105,22 @@ function PaginaASCIIMapLoader({
                                 ├──🔗 @babel/standalone/babel.min.js
                                 └──🔗 @mui/material@latest/umd/material-ui.production.min.js
                             \`);
-                    `)}
-                </Code>
+                `}</Code>
 
-                <h1>
-                    Iconos de control
-                </h1>
+            </EnvolventeSeccion>
+            <br />
+            <br />
+            <h1
+                style={{
+                    fontSize: "40px",
+                }}
+            >
+                <Titulo
+                    texto="Emojis y ASCII de control"
+                />
+            </h1>
+            <br />
+            <EnvolventeSeccion>
                 <ul className="punto-centrico">
                     <li>
                         <h2>
@@ -111,10 +129,12 @@ function PaginaASCIIMapLoader({
                         <SubEnvolventeSeccion>
                             <ul>
                                 <li>
-                                    ➤ {tab} <ChipCode nocode label="Se usa para indicar que se está empezando un arból" />
+                                    <EmojiASCIIControl icono="➤" />
+                                    {tab} <ChipCode nocode label="Se usa para indicar que se está empezando un arból" />
                                 </li>
                                 <li>
-                                    ── {tab} <ChipCode nocode label="Se usa para decorar el dibujo del arból" />
+                                    <EmojiASCIIControl icono="──" />
+                                    {tab} <ChipCode nocode label="Se usa para decorar el dibujo del arból" />
                                 </li>
                             </ul>
                         </SubEnvolventeSeccion>
@@ -127,16 +147,20 @@ function PaginaASCIIMapLoader({
                         <SubEnvolventeSeccion>
                             <ul>
                                 <li>
-                                    ├ {tab} <ChipCode nocode label="Se usa para indicar bifurcacio a la derecha y abajo" />
+                                    <EmojiASCIIControl icono="├" />
+                                    {tab} <ChipCode nocode label="Se usa para indicar bifurcacio a la derecha y abajo" />
                                 </li>
                                 <li>
-                                    └ {tab} <ChipCode nocode label="Se usa para indicar bifurcación a la derecha unicamente" />
+                                    <EmojiASCIIControl icono="└" />
+                                    {tab} <ChipCode nocode label="Se usa para indicar bifurcación a la derecha unicamente" />
                                 </li>
                                 <li>
-                                    │ {tab} <ChipCode nocode label="Se usa para indicar que este camino no tiene bifurcacion en ese renglón" />
+                                    <EmojiASCIIControl icono="│" />
+                                    {tab} <ChipCode nocode label="Se usa para indicar que este camino no tiene bifurcacion en ese renglón" />
                                 </li>
                                 <li>
-                                    ╧ {tab} <ChipCode nocode label="Se usa para indicar que este camino finaliza" />
+                                    <EmojiASCIIControl icono="╧" />
+                                    {tab} <ChipCode nocode label="Se usa para indicar que este camino finaliza" />
                                 </li>
                             </ul>
                         </SubEnvolventeSeccion>
@@ -146,6 +170,7 @@ function PaginaASCIIMapLoader({
                         <h2>
                             Decoradores
                         </h2>
+                        <br />
                         <ul>
                             <li>
                                 <Resaltar>
@@ -154,13 +179,16 @@ function PaginaASCIIMapLoader({
                                 <SubEnvolventeSeccion>
                                     <ul>
                                         <li>
-                                            🌐 {tab} <ChipCode nocode label="Se usa para indicar directorio web" />
+                                            <EmojiASCIIControl icono="🌐" />
+                                            {tab} <ChipCode nocode label="Se usa para indicar directorio web" />
                                         </li>
                                         <li>
-                                            📁 {tab} <ChipCode nocode label="Se usa para indicar directorio" />
+                                            <EmojiASCIIControl icono="📁" />
+                                            {tab} <ChipCode nocode label="Se usa para indicar directorio" />
                                         </li>
                                         <li>
-                                            🗀 {tab} <ChipCode nocode label="Se usa para indicar un directorio ignorado" />
+                                            <EmojiASCIIControl icono="🗀" />
+                                            {tab} <ChipCode nocode label="Se usa para indicar un directorio ignorado" />
                                         </li>
                                     </ul>
                                 </SubEnvolventeSeccion>
@@ -176,13 +204,16 @@ function PaginaASCIIMapLoader({
                                     <Resaltar color="plum">
                                         Obligatorio para hojas
                                     </Resaltar>
+                                    <br /><br />
                                     <ul>
                                         <li>
                                             <li>
-                                                🔗 {tab} <ChipCode nocode label="Se usa para indicar archivo web" />
+                                                <EmojiASCIIControl icono="🔗" />
+                                                {tab} <ChipCode nocode label="Se usa para indicar archivo web" />
                                             </li>
                                             <li>
-                                                📄 {tab} <ChipCode nocode label="Se usa para indicar archivo" />
+                                                <EmojiASCIIControl icono="📄" />
+                                                {tab} <ChipCode nocode label="Se usa para indicar archivo" />
                                             </li>
                                         </li>
                                     </ul>
@@ -192,12 +223,15 @@ function PaginaASCIIMapLoader({
                                     <Resaltar color="plum">
                                         Tipo de archivo
                                     </Resaltar>
+                                    <br /><br />
                                     <ul>
                                         <li>
-                                            🎨 {tab} <ChipCode nocode label="Se usa para indicar archivo CSS" />
+                                            <EmojiASCIIControl icono="🎨" />
+                                            {tab} <ChipCode nocode label="Se usa para indicar archivo CSS" />
                                         </li>
                                         <li>
-                                            🖼️ {tab} <ChipCode nocode label="Se usa para indicar archivo que tiene .css de mismo nombre" />
+                                            <EmojiASCIIControl icono="🖼️" />
+                                            {tab} <ChipCode nocode label="Se usa para indicar archivo que tiene .css de mismo nombre" />
                                         </li>
                                     </ul>
                                 </SubEnvolventeSeccion>
@@ -206,10 +240,12 @@ function PaginaASCIIMapLoader({
                                     <Resaltar color="plum">
                                         Especial
                                     </Resaltar>
+                                    <br /><br />
                                     <ul>
 
                                         <li>
-                                            🏠 {tab} <ChipCode nocode label="Se usa para que un archivo aunque esté representado dentro de un directorio, se cargue a nivel raíz" />
+                                            <EmojiASCIIControl icono="🏠" />
+                                            {tab} <ChipCode nocode label="Se usa para que un archivo aunque esté representado dentro de un directorio, se cargue a nivel raíz" />
                                         </li>
                                     </ul>
                                 </SubEnvolventeSeccion>
@@ -219,27 +255,36 @@ function PaginaASCIIMapLoader({
                                 <Resaltar>
                                     COMANDOS
                                 </Resaltar>
+                                <br />
+                                <br />
                                 <ul>
                                     <li>
-                                        🤖 {tab} <ChipCode nocode label="Indica que se está haciendo llamado a un comando" />
+                                        <EmojiASCIIControl icono="🤖" />
+                                        {tab} <ChipCode nocode label="Indica que se está haciendo llamado a un comando" />
                                         <SubEnvolventeSeccion>
                                             <Resaltar color="plum">
                                                 Comandos soportados
                                             </Resaltar>
+                                            <br />
+                                            <br />
                                             <ul>
                                                 <li>
                                                     <Resaltar color="lightgreen">
-                                                        JAVASCRIPT (JS)
+                                                        <code>
+                                                            JAVASCRIPT (JS)
+                                                        </code>
                                                     </Resaltar>
                                                     <br />
-                                                    Se usa para indicar que el archivo es de tipo JavaScript <ChipCode label="type='text/javascript'" />
+                                                    Se usa para indicar que los archivos siguientes son tipo JavaScript <ChipCode label="type='text/javascript'" />
                                                 </li>
                                                 <li>
                                                     <Resaltar color="lightgreen">
-                                                        REACT (JSX)
+                                                        <code>
+                                                            REACT (JSX)
+                                                        </code>
                                                     </Resaltar>
                                                     <br />
-                                                    Se usa para indicar que el archivo es de tipo React <ChipCode label="type='text/babel'" />
+                                                    Se usa para indicar que los archivos siguientes son de tipo React (JSX) <ChipCode label="type='text/babel'" />
                                                 </li>
                                             </ul>
                                         </SubEnvolventeSeccion>
@@ -249,6 +294,48 @@ function PaginaASCIIMapLoader({
                         </ul>
                     </li>
                 </ul>
+            </EnvolventeSeccion>
+            <br />
+            <br />
+            <h1
+                style={{
+                    fontSize: "50px",
+                }}
+            >
+                <Titulo
+                    texto="Funciones"
+                />
+            </h1>
+            <br />
+            <EnvolventeSeccion>
+                <h1>
+                    <CodeInline>
+                        runASCIIMapLoader_inLine(String);
+                    </CodeInline>
+                </h1>
+                <br />
+                Esta función recibe un string que contiene un mapeo ASCII y carga las dependencias de forma dinámica
+                basándose en los caracteres especiales de mapeo y las rutas anidadas de las dependencias.
+                <br /><br />
+                Esta función se debe usar directamente en un script dentro del HTML, porque escribe en tiempo real las dependencias
+                a medida que se carga el documento.
+
+                <Code language="html" className="noNumerar">{`
+                    <!DOCTYPE html>
+                    <html lang="es">
+                        <head>
+                            <script src="https://cdn.jsdelivr.net/gh/Jeff-Aporta/ASCIIMapLoader@main/index.js"></script>
+                            <!-- Carga de dependencias -->
+                            <script>
+                                    runASCIIMapLoader_inLine("TU MAPEO ASCII");
+                            </script>
+                            <!-- demás contenido del head -->
+                        </head>
+                        <body>
+                            <!-- Contenido de la página -->
+                        </body>
+                    </html>
+                `}</Code>
             </EnvolventeSeccion>
             <br />
             <br />
@@ -276,6 +363,7 @@ function PaginaASCIIMapLoader({
                         runASCIIMapLoad_inLine(map);
                     });
                 `}</Code>
+                <br />
                 {
                     Object.entries(ASCII_MAPS).map(([k, map]) => {
                         return ([
@@ -287,12 +375,12 @@ function PaginaASCIIMapLoader({
                                 </h2>
                                 <br />
                                 <CodeInline language="js">
-                                    runASCIIMapLoad(ASCII_MAPS.{k});
+                                    runASCIIMapLoad_inLine(ASCII_MAPS.{k});
                                 </CodeInline>
                                 <br />
-                                <pre className="prettyprint mini lang-jsx linenums:1">
-                                    {eliminarTabulacionesInnecesarias(map.replaceAll("//", "/\u2060/"))}
-                                </pre>
+                                <Code linenumbers={false}>{
+                                    map.replaceAll("//", "/\u2060/")
+                                }</Code>
                             </SubEnvolventeSeccion>,
                             <br />
                         ]);
@@ -300,20 +388,20 @@ function PaginaASCIIMapLoader({
                 }
             </EnvolventeSeccion>
 
-            <br />
-            <br />
-            <hr />
-            <br />
-            <br />
-
-            {inclusionEnPortafolio ? <BotonLinkPortafolio /> : ""}
+            {inclusionEnPortafolio ?
+                <React.Fragment>
+                    <br />
+                    <br />
+                    <hr />
+                    <br />
+                    <br />
+                    <BotonLinkPortafolio />
+                </React.Fragment> :
+                ""}
         </EnvolventePagina>
     );
 
-    function eliminarTabulacionesInnecesarias(stringCode) {
-        let renglones = stringCode.split('\n').filter(e => e.trim());
-        const tabulaciones = renglones[0].match(/^\s*/)[0].length;
-        renglones = renglones.map((e, i) => e.slice(tabulaciones));
-        return renglones.join('\n');
+    function EmojiASCIIControl({ icono }) {
+        return <span style={{ fontSize: "150%" }}>{icono}</span>;
     }
 }
