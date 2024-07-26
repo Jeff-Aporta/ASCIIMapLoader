@@ -62,11 +62,16 @@ const ASCII_MAPS = {
             ╧   ╧   ╧   └──📄 theme1
     `,
   PORTAFOLIO: `
-            ➤🌐 https://cdn.jsdelivr.net/gh/Jeff-Aporta/portafolio@u2024.07.25.25
+            ➤🌐 https://cdn.jsdelivr.net/gh/Jeff-Aporta/portafolio@u2024.07.26.4
             │
             ├──🎨 index
             │
             🤖 REACT (JSX)
+            │
+            ├──📁 paginas
+            │   │
+            │   ├──📁 librerias
+            │   ╧   └──🖼️ lib
             │
             ├──📁 src
             │   │
@@ -75,6 +80,6 @@ const ASCII_MAPS = {
             │   │
             │   ├──📁 jsx
             │   │   ├──🖼️ componentes
-            ╧   ╧   └──📄 pagina
+            ╧   ╧   └──🖼️ pagina
     `,
 };

@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASCIIMapLoader</title>
 
     <script src="index.js"></script>
-    <script src="mapeos-personales.js"></script>
+    <script src="src/mapeos-personales.js"></script>
 
     <script>
-        Object.values(ASCII_MAPS).forEach((map) => {
-            runASCIIMapLoader_inLine(map);
-        });
+      Object.values(ASCII_MAPS).forEach((map) => {
+        runASCIIMapLoader_inLine(map);
+      });
 
-        runASCIIMapLoader_inLine(`
+      runASCIIMapLoader_inLine(`
+            ➤📁 src
+            │
             🤖 REACT (JSX)
+            │
+            ├──📁 esquema
+            │   ├──📄 contenido
+            ╧   └──🖼️ main
 
-            ➤🖼️ esquema
-            ➤📄 index
+            📄 index
         `);
     </script>
-</head>
-<body>
-</body>
+  </head>
+  <body></body>
 </html>
