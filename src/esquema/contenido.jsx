@@ -9,7 +9,7 @@ const _ASCIIMapLoader_ = {
         &nbsp;&nbsp;&nbsp;&nbsp;
     </b>,
 
-    resumen: function ({ inclusionEnPortafolio }) {
+    resumen: function ({ inclusionEnPortafolio, rel="" }) {
         return <p>
             <FormatoDoc>
                 <Resaltar>ASCII Map Loader</Resaltar>&nbsp;
@@ -21,8 +21,7 @@ const _ASCIIMapLoader_ = {
                 src={
                     inclusionEnPortafolio ?
                         [
-                            "https://cdn.jsdelivr.net/gh/Jeff-Aporta/ASCIIMapLoader@latest",
-                            this.img
+                            rel, this.img
                         ].join("/") :
                         this.img
                 }
