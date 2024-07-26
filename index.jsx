@@ -50,6 +50,16 @@ function App() {
                     <br />
                     Se basa en un mapa ASCII que contiene las rutas de las dependencias a cargar.
                 </p>
+                <br />
+                <h1>
+                    Usar con CDN
+                </h1>
+                <p>
+                    Para usar <b>ASCII Map Loader</b> en un proyecto web, se debe agregar el siguiente script en el archivo HTML.
+                </p>
+                <pre className="prettyprint lang-html linenums:1">{`
+                    <script src="https://cdn.jsdelivr.net/gh/Jeff-Aporta/ASCIIMapLoader/dist/ASCIIMapLoader.min.js"></script>
+                `}</pre>
                 <h1>
                     Ejemplo
                 </h1>
