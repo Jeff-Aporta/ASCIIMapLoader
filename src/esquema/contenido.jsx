@@ -1,4 +1,4 @@
-const _ASCIIMapLoader_ = {
+const _ASCIIMapLoader_ = new GenerarContenidoLibreria({
     nombre: 'ASCII Map Loader',
     slogan: "Carga dependencias JS, JSX o CSS con dibujos ASCII",
     img: "src/img/logo.jpeg",
@@ -9,19 +9,16 @@ const _ASCIIMapLoader_ = {
         &nbsp;&nbsp;&nbsp;&nbsp;
     </b>,
 
-    resumen: function () {
-        return {
-            img: this.img,
-            desc: [
-                <Resaltar>ASCII Map Loader&nbsp;</Resaltar>,
-                "es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML."
-            ],
-            descImg: [
-                "Se dibujan las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.",
-                "Tiene funciones primitivas que permiten ejecutar comandos.",
-                "Soporta archivos de tipo JavaScript, React (JSX) y CSS."
-            ]
-        }
+    resumen: {
+        desc: [
+            <Resaltar>ASCII Map Loader&nbsp;</Resaltar>,
+            "es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML."
+        ],
+        descImg: [
+            "Se dibujan las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.",
+            "Tiene funciones primitivas que permiten ejecutar comandos.",
+            "Soporta archivos de tipo JavaScript, React (JSX) y CSS."
+        ]
     },
 
     secciones: [
@@ -342,4 +339,4 @@ const _ASCIIMapLoader_ = {
                 ""
         );
     }
-};
+});
