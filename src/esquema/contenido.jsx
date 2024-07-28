@@ -9,51 +9,19 @@ const _ASCIIMapLoader_ = {
         &nbsp;&nbsp;&nbsp;&nbsp;
     </b>,
 
-    resumen: function ({ inclusionEnPortafolio, rel="" }) {
-        return <p>
-            <FormatoDoc>
-                <Resaltar>ASCII Map Loader</Resaltar>&nbsp;
-                es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML.
-            </FormatoDoc>
-            <br />
-            <br />
-            <img
-                src={
-                    inclusionEnPortafolio ?
-                        [
-                            rel, this.img
-                        ].join("/") :
-                        this.img
-                }
-                style={{
-                    float: 'left',
-                    margin: '10px 40px 0 0',
-                    width: '200px',
-                    borderRadius: '20px',
-                }}
-            />
-            <br />
-            <div
-                style={{
-                    display: 'inline-block',
-                }}
-            >
-                <ul className="punto-centrico">
-                    <li>
-                        Se dibujan las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.
-                    </li>
-                    <li>
-                        Tiene decoradores con emojis para indicar el tipo de archivos, directorios y comandos.
-                    </li>
-                    <li>
-                        Tiene funciones primitivas que permiten ejecutar comandos.
-                    </li>
-                    <li>
-                        Soporta archivos de tipo <b>JavaScript</b>, <b>React (JSX)</b> y <b>CSS</b>.
-                    </li>
-                </ul>
-            </div>
-        </p>;
+    resumen: function () {
+        return {
+            img: this.img,
+            desc: [
+                <Resaltar>ASCII Map Loader&nbsp;</Resaltar>,
+                "es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML."
+            ],
+            descImg: [
+                "Se dibujan las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.",
+                "Tiene funciones primitivas que permiten ejecutar comandos.",
+                "Soporta archivos de tipo JavaScript, React (JSX) y CSS."
+            ]
+        }
     },
 
     secciones: [
