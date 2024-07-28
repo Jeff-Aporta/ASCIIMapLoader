@@ -64,9 +64,9 @@ const ASCII_MAPS = {
   PORTAFOLIO: `
             ➤🌐 https://jeff-aporta.github.io/portafolio
             │
-            ├──🎨 index
-            │
             🤖 REACT (JSX)
+            │
+            ├──🎨 index
             │
             ├──📁 componentes
             │   ├──📄 objetos
