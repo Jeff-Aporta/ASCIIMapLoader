@@ -1,9 +1,11 @@
 ReactDOM.render(
     <div className="esquema-principal">
         <div className="contenedor-pagina">
-            <PaginaASCIIMapLoader />
+            <EnvolventePagina>
+                <PaginaASCIIMapLoader />
+            </EnvolventePagina>
         </div>
-    </div>, 
+    </div>,
     document.querySelector('body')
 );
 

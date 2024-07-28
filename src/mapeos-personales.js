@@ -62,24 +62,24 @@ const ASCII_MAPS = {
             ╧   ╧   ╧   └──📄 theme1
     `,
   PORTAFOLIO: `
-            ➤🌐 https://cdn.jsdelivr.net/gh/Jeff-Aporta/portafolio@u2024.07.26.4
+            ➤🌐 https://jeff-aporta.github.io/portafolio
             │
             ├──🎨 index
             │
             🤖 REACT (JSX)
             │
-            ├──📁 paginas
-            │   │
-            │   ├──📁 librerias
-            │   ╧   └──🖼️ lib
-            │
+            ├──📁 componentes
+            │   ├──📄 objetos
+            │   │   
+            │   ├──📁 paginas
+            │   │   │
+            │   │   ├──📁 main
+            │   │   │   ├──🖼️ componentes
+            │   ╧   ╧   └──🖼️ envolventes
+            │   
             ├──📁 src
             │   │
             │   ├──📁 css
-            │   │   └──🎨 code-prettify
-            │   │
-            │   ├──📁 jsx
-            │   │   ├──🖼️ componentes
-            ╧   ╧   └──🖼️ pagina
+            ╧   ╧   └──🎨 code-prettify
     `,
 };

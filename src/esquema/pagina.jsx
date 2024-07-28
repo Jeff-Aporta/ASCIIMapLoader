@@ -1,7 +1,3 @@
 function PaginaASCIIMapLoader(props) {
-    return (
-        <EnvolventePagina>
-            {esquemaGeneralLibreria(_ASCIIMapLoader_, props)}
-        </EnvolventePagina>
-    );
+    return esquemaGeneralLibreria(_ASCIIMapLoader_, props);
 }
