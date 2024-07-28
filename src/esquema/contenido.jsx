@@ -25,7 +25,6 @@ const _ASCIIMapLoader_ = {
                         ].join("/") :
                         this.img
                 }
-                alt="Logo"
                 style={{
                     float: 'left',
                     margin: '10px 40px 0 0',
