@@ -15,9 +15,9 @@ const _ASCIIMapLoader_ = new GenerarContenidoLibreria({
             "es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML."
         ],
         descImg: [
-            "Se dibujan las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.",
-            "Tiene funciones primitivas que permiten ejecutar comandos.",
-            "Soporta archivos de tipo JavaScript, React (JSX) y CSS."
+            "Dibujar las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.",
+            "Soportar funciones primitivas y decoradores de control.",
+            "Cargar archivos de JavaScript, React (JSX) y CSS."
         ]
     },
 
