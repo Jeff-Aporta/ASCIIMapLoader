@@ -26,8 +26,6 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
         ? `<link rel="stylesheet" href="${archivo}">`
         : `<script type="${type}" src="${archivo}${ext ?? ""}"><\/script>`;
 
-    console.log(stringLoad);
-
     document.write(stringLoad);
 
     function intuirExtension() {
