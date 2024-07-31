@@ -325,18 +325,4 @@ const _ASCIIMapLoader_ = new GenerarContenidoLibreria({
             }
         },
     ],
-    footer: function ({ inclusionEnPortafolio }) {
-        return (
-            !inclusionEnPortafolio ?
-                <React.Fragment>
-                    <br />
-                    <br />
-                    <hr />
-                    <br />
-                    <br />
-                    <BotonLinkPortafolio />
-                </React.Fragment> :
-                ""
-        );
-    }
 });
