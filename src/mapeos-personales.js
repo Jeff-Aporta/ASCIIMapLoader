@@ -84,5 +84,9 @@ const ASCII_MAPS = {
             │   │
             │   ├──📁 css
             ╧   ╧   └──🎨 code-prettify
-    `,
+  `,
+  CSSCMDS: `
+            ➤🌐 https://jeff-aporta.github.io/CSScmds
+            └──📄 index.js
+  `,
 };
