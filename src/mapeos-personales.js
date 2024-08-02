@@ -18,11 +18,37 @@ const ASCII_MAPS = {
         ├──🔗 react-dom@latest/umd/react-dom.production.min.js
         ├──🔗 @babel/standalone/babel.min.js
         └──🔗 @mui/material@latest/umd/material-ui.production.min.js
-    `,
+  `,
+  PORTAFOLIO: `
+            ➤🌐 https://jeff-aporta.github.io/portafolio
+            │   
+            ├──📁 src
+            │   ├──📄 JS2CSS.js
+            │   └──📄 theme.jsx
+            │
+            🤖 REACT (JSX)
+            │
+            ├──🎨 index
+            │
+            ├──📁 componentes
+            │   ├──📄 objetos
+            │   │   
+            │   ├──📁 paginas
+            │   │   │
+            │   │   ├──📁 librerias
+            │   │   │   └──🖼️ componentes
+            │   │   │
+            │   │   ├──📁 main
+            │   │   │   ├──🖼️ componentes
+            │   ╧   ╧   └──🖼️ envolventes
+            │   
+            ├──📁 src
+            │   │
+            │   ├──📁 css
+            ╧   ╧   └──🎨 code-prettify
+  `,
   REACT_DESIGN_SYSTEM: `
             ➤🌐 https://cdn.jsdelivr.net/gh/Jeff-Aporta/react-cdn-design-system@main
-            │
-            ├──📄 JS2CSS
             │
             ├──📁 dependencias
             │   └──🎨 animate.min
@@ -58,30 +84,6 @@ const ASCII_MAPS = {
             │   │   ├──📁 video
             ╧   ╧   ╧   └──📄 theme1
     `,
-  PORTAFOLIO: `
-            ➤🌐 https://jeff-aporta.github.io/portafolio
-            │
-            🤖 REACT (JSX)
-            │
-            ├──🎨 index
-            │
-            ├──📁 componentes
-            │   ├──📄 objetos
-            │   │   
-            │   ├──📁 paginas
-            │   │   │
-            │   │   ├──📁 librerias
-            │   │   │   └──🖼️ componentes
-            │   │   │
-            │   │   ├──📁 main
-            │   │   │   ├──🖼️ componentes
-            │   ╧   ╧   └──🖼️ envolventes
-            │   
-            ├──📁 src
-            │   │
-            │   ├──📁 css
-            ╧   ╧   └──🎨 code-prettify
-  `,
   CSSCMDS: `
             ➤🌐 https://jeff-aporta.github.io/CSScmds
             └──📄 index.js
