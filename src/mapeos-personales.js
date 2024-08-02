@@ -31,6 +31,7 @@ const ASCII_MAPS = {
             ├──🎨 index
             │
             ├──📁 componentes
+            │   ├──📄 coleccion-aux
             │   ├──📄 objetos
             │   │   
             │   ├──📁 paginas
