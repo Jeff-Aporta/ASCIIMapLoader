@@ -23,14 +23,11 @@ const ASCII_MAPS = {
             ➤🌐 https://cdn.jsdelivr.net/gh/Jeff-Aporta/react-cdn-design-system@main
             │
             ├──📄 JS2CSS
-            ├──🎨 abreviaturas
             │
             ├──📁 dependencias
             │   └──🎨 animate.min
             │
             🤖 REACT (JSX)
-            │
-            ├──📄 main
             │
             ├──📁 componente
             │   │
