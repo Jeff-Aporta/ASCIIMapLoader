@@ -11,7 +11,7 @@ const _ASCIIMapLoader_ = new GenerarContenidoLibreria({
 
     resumen: {
         desc: [
-            <Resaltar>ASCII Map Loader&nbsp;</Resaltar>,
+            "*ASCII Map Loader*",
             "es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML."
         ],
         descImg: [
