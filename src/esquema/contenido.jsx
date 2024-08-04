@@ -10,10 +10,9 @@ const _ASCIIMapLoader_ = new GenerarContenidoLibreria({
     </b>,
 
     resumen: {
-        desc: [
-            "*ASCII Map Loader*",
-            "es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML."
-        ],
+        desc: `
+            *ASCII Map Loader* es una herramienta que permite cargar dependencias de forma dinámica y gráfica en un HTML.
+        `,
         descImg: [
             "Dibujar las dependencias en forma de árbol, donde cada rama es una dependencia y cada hoja es un archivo.",
             "Soportar funciones primitivas y decoradores de control.",
