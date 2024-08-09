@@ -5,12 +5,12 @@ https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css
 
 const ASCII_MAPS = {
   CODEPRETTIFY: `
-        🔗 https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js
-    `,
+      🔗 https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js
+  `,
   ICONOS: `
-        🔗 https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css
-        🔗 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
-    `,
+      🔗 https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css
+      🔗 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+  `,
   REACT_MUI: `
         ➤🌐 https://unpkg.com
         │
@@ -18,6 +18,9 @@ const ASCII_MAPS = {
         ├──🔗 react-dom@latest/umd/react-dom.production.min.js
         ├──🔗 @babel/standalone/babel.min.js
         └──🔗 @mui/material@latest/umd/material-ui.production.min.js
+  `,
+  YOUTUBELITE: `
+      🔗 https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js
   `,
   PORTAFOLIO: `
             ➤🌐 https://jeff-aporta.github.io/portafolio
