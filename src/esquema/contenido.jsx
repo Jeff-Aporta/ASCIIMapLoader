@@ -35,7 +35,7 @@ const _ASCIIMapLoader_ = (() => {
                             Se puede usar el siguiente enlace para cargar el script.
                         </p>
                         <Code nocode className="link">
-                            https://jeff-aporta.github.io/ASCIIMapLoader/index.js
+                            {thisObj.githubPage}/index.js
                         </Code>
                         <p>
                             También pueden usar un archivo llamado <Resaltar>mapeos-personales.js</Resaltar> que contiene mapeos personales de
@@ -44,7 +44,7 @@ const _ASCIIMapLoader_ = (() => {
                             Al final de este documento se encuentra un ejemplo de uso de este archivo.
                         </p>
                         <Code nocode className="link">
-                            https://jeff-aporta.github.io/ASCIIMapLoader/mapeos-personales.js
+                            {thisObj.githubPage}/mapeos-personales.js
                         </Code>
                         <h1>
                             Ejemplo
@@ -227,7 +227,7 @@ const _ASCIIMapLoader_ = (() => {
                             <!DOCTYPE html>
                             <html lang="es">
                                 <head>
-                                    <script src="https://jeff-aporta.github.io/ASCIIMapLoader/index.js"></script>
+                                    <script src="${thisObj.githubPage}/index.js"></script>
                                     <!-- Carga de dependencias -->
                                     <script>
                                             runASCIIMapLoader_inLine("TU MAPEO ASCII");
