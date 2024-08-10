@@ -230,6 +230,10 @@ const _ASCIIMapLoader_ = (() => {
                                 <EmojiASCIIControl icono="🖼️" />
                                 {tab} <ResaltoBasico nocode label="Se usa para indicar archivo que tiene .css de mismo nombre" />
                             </li>
+                            <li>
+                                <EmojiASCIIControl icono="📦" />
+                                {tab} <ResaltoBasico nocode label="Se usa para indicar que un archivo JS es de tipo módulo" />
+                            </li>
                         </ul>
                     );
                 }
