@@ -7,7 +7,7 @@ const _ASCIIMapLoader_ = (() => {
     );
 
     return new GenerarContenidoLibreria({
-        nombre: 'ASCII Map Loader',
+        nombre: 'ASCII Map Loader JS',
         slogan: "Carga dependencias JS, JSX o CSS con dibujos ASCII",
         img: "src/img/logo.jpeg",
 
