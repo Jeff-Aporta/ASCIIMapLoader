@@ -26,6 +26,77 @@ const _ASCIIMapLoader_ = (() => {
 
         secciones: [
             {
+                nombre: "Presentación",
+                contenido: (thisObj) => {
+                    return (
+                        <FormatoDoc>
+                            *ASCII Map Loader.* Esta librería permite cargar dependencias de JavaScript, JSX o CSS de forma dinámica y
+                            gráfica utilizando dibujos ASCII
+                            <div
+                                style={{
+                                    maxWidth: "500px",
+                                    maxHeight: "400px",
+                                    margin: "15px auto",
+                                }}
+                            >
+                                <lite-youtube
+                                    videoid="B0kZDcAJUb8"
+                                />
+                            </div>
+                            <h2>
+                                Beneficios
+                            </h2>
+                            <ul>
+                                <LIDocTitulo>
+                                    Automatización Eficiente: Convierte mapas ASCII en dependencias de manera automática.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Generación Dinámica: enlaces CSS, JS y JSX en tu documento HTML sin esfuerzo.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Optimización del Tiempo: Ahorra tiempo al evitar la inclusión larga de recursos.
+                                </LIDocTitulo>
+                            </ul>
+                            <h2>
+                                Características
+                            </h2>
+                            <ul>
+                                <LIDocTitulo>
+                                    Recorrido Recursivo: Itera sobre cada nodo del árbol, gestionando carpetas y archivos de manera eficiente.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Generación de Scripts y Links: Produce cadenas HTML adecuadas para incluir archivos en el documento.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Deducción de Extensiones: Identifica y ajusta automáticamente las extensiones de los archivos.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Decoradores con Emojis: Ayuda a visualizar la estructura del árbol con emojis y caracteres especiales.
+                                </LIDocTitulo>
+                            </ul>
+                            <h2>
+                                ¿Por Qué Usar ASCII Map Loader?
+                            </h2>
+                            <ul>
+                                <LIDocTitulo>
+                                    Facilidad de Uso: Simplifica la inclusión de recursos en tu página web.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Flexibilidad: Adapta y refina nombres de archivos y carpetas para una mejor organización.
+                                </LIDocTitulo>
+                                <LIDocTitulo>
+                                    Eficiencia: Elimina nodos innecesarios y optimiza la estructura del árbol.
+                                </LIDocTitulo>
+                            </ul>
+                            <br />
+                            <p>
+                                ¡Transforma tu flujo de trabajo y lleva tu desarrollo web al siguiente nivel con ASCII Map Loader! 🚀
+                            </p>
+                        </FormatoDoc>
+                    );
+                }
+            },
+            {
                 nombre: "Usar con CDN",
                 contenido: (thisObj) => {
                     return <FormatoDoc>

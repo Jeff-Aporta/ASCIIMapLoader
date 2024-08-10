@@ -20,7 +20,7 @@ const ASCII_MAPS = {
       └──🔗 @mui/material@latest/umd/material-ui.production.min.js
   `,
   YOUTUBELITE: `
-      🔗 https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js
+      📦 https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js
   `,
   PORTAFOLIO: `
       ➤🌐 https://jeff-aporta.github.io/portafolio

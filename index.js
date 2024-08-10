@@ -42,6 +42,7 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
 
       function protocoloDeExtensionTipada() {
         switch (type) {
+          case "module":
           case "text/javascript":
             ext = ".js";
             break;
@@ -54,7 +55,7 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
       function protocoloDeExtensionQuemada() {
         if (isJSX) {
           type = "text/babel";
-        } else if (isJS) {
+        } else if (isJS && type != "module") {
           type = "text/javascript";
         }
       }
@@ -69,9 +70,10 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
     const decoradores = {
       enRaiz: "🏠",
       CSS: "🎨",
+      JSModule: "📦",
       JSXCSS: "🖼️",
       ramas: ["🌐", "📁", "🗀"],
-      hojas: ["🔗", "📄", "🎨", "🖼️", "🏠"],
+      hojas: ["🔗", "📄", "🎨", "🖼️", "🏠", "📦"],
       comandos: ["🤖"],
     };
 
@@ -206,8 +208,6 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
           generarArbol({ padre: padre.padre, node });
         }
       } else {
-        let type = padre.type;
-
         if (decoradores.comandos.some((e) => renglon.includes(e))) {
           ejecutarComando();
           generarArbol({ padre });
@@ -236,15 +236,25 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
               });
             }
           } else if (esHoja) {
+            let type = padre.type;
+
             if (renglon.includes(decoradores.CSS)) {
               if (!renglon.endsWith(".css")) {
                 renglon += ".css";
               }
             }
+
+            if (renglon.includes(decoradores.JSModule)) {
+              type = "module";
+              if (!renglon.endsWith(".js")) {
+                renglon += ".js";
+              }
+            }
+
             const newRoot = {
               padre,
               archivo: renglon,
-              type: padre.type,
+              type,
               nivel: determinarNivel,
             };
 
