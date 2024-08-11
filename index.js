@@ -1,4 +1,15 @@
 function runASCIIMapLoader_inLine(asciiMaploader) {
+  const decoradores = {
+    enRaiz: "🏠",
+    CSS: "🎨",
+    JSModule: "📦",
+    JSXCSS: "🖼️",
+    defer: "🐌",
+    ramas: ["🌐", "📁", "🗀"],
+    hojas: ["🔗", "📄", "🎨", "🖼️", "🏠", "📦"],
+    comandos: ["🤖"],
+  };
+
   recorrerRecursivamenteTodosLosNodos(ASCIIMapLoader2JSON(asciiMaploader));
 
   function recorrerRecursivamenteTodosLosNodos(node, rutaAcumulada) {
@@ -72,16 +83,6 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
   function ASCIIMapLoader2JSON(stringASCIIMapLoader) {
     const ignorar = ["➤", "──"];
     const indicadorDeNivel = ["├", "└", "│", "╧"];
-    const decoradores = {
-      enRaiz: "🏠",
-      CSS: "🎨",
-      JSModule: "📦",
-      JSXCSS: "🖼️",
-      defer: "🐌",
-      ramas: ["🌐", "📁", "🗀"],
-      hojas: ["🔗", "📄", "🎨", "🖼️", "🏠", "📦"],
-      comandos: ["🤖"],
-    };
 
     let renglones = stringASCIIMapLoader
       .split("\n")
