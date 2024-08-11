@@ -234,6 +234,10 @@ const _ASCIIMapLoader_ = (() => {
                                 <EmojiASCIIControl icono="📦" />
                                 {tab} <ResaltoBasico nocode label="Se usa para indicar que un archivo JS es de tipo módulo" />
                             </li>
+                            <li>
+                                <EmojiASCIIControl icono="🐌" />
+                                {tab} <ResaltoBasico nocode label="Se usa para indicar que un archivo JS tiene activado defer" />
+                            </li>
                         </ul>
                     );
                 }
