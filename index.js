@@ -19,12 +19,17 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
 
   function writeScript({ archivo, type }) {
     let ext;
+    const defer = archivo.includes(decoradores.defer);
+    archivo = archivo.replace(decoradores.defer, "").trim();
+
     intuirExtension();
 
     let stringLoad =
       ext == ".css"
         ? `<link rel="stylesheet" href="${archivo}">`
-        : `<script type="${type}" src="${archivo}${ext ?? ""}"><\/script>`;
+        : `<script type="${type}" src="${archivo}${ext ?? ""}" ${
+            defer ? "defer" : ""
+          }><\/script>`;
 
     document.write(stringLoad);
 
@@ -72,6 +77,7 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
       CSS: "🎨",
       JSModule: "📦",
       JSXCSS: "🖼️",
+      defer: "🐌",
       ramas: ["🌐", "📁", "🗀"],
       hojas: ["🔗", "📄", "🎨", "🖼️", "🏠", "📦"],
       comandos: ["🤖"],
