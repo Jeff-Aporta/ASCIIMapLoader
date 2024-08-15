@@ -4,6 +4,10 @@ https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css
 */
 
 const ASCII_MAPS = {
+  CSSCMDS: `
+      ➤🌐 https://jeff-aporta.github.io/CSScmds
+      └──📄 index.js
+  `,
   CODEPRETTIFY: `
       🔗 https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js
   `,
@@ -50,46 +54,5 @@ const ASCII_MAPS = {
       │   │
       │   ├──📁 css
       ╧   ╧   └──🎨 code-prettify
-  `,
-  REACT_DESIGN_SYSTEM: `
-      ➤🌐 https://cdn.jsdelivr.net/gh/Jeff-Aporta/react-cdn-design-system@main
-      │
-      ├──📁 dependencias
-      │   └──🎨 animate.min
-      │
-      🤖 REACT (JSX)
-      │
-      ├──📁 componente
-      │   │
-      │   ├──📁 MUICustom
-      │   │   ├──📄 prettoSlider
-      │   │   ├──📄 switchTheme
-      │   │   └──📄 toolTipTheme
-      │   │
-      │   ├──📁 selects
-      │   │   ├──🖼️ selector-tiempo
-      │   │   └──🖼️ selectpicker
-      │   │
-      │   ├──📁 ventanas
-      │   │   │
-      │   │   ├──📁 flotante-tipo-windows
-      │   │   │   ├──📄 1-main
-      │   │   │   ├──📄 2-modelos
-      │   │   │   ├──📄 2-globales
-      │   │   │   ├──📄 2-css-root-control
-      │   │   │   ├──🎨 index
-      │   │   │   │
-      │   │   │   ├──📁 componente
-      │   │   │   │   ├──📄 3-crear
-      │   │   │   │   ├──📄 3-marco
-      │   │   ╧   ╧   └──📄 3-control
-      │   │
-      │   ├──📁 reproductor
-      │   │   ├──📁 video
-      ╧   ╧   ╧   └──📄 theme1
-    `,
-  CSSCMDS: `
-      ➤🌐 https://jeff-aporta.github.io/CSScmds
-      └──📄 index.js
   `,
 };
