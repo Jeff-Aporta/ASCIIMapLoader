@@ -14,10 +14,10 @@ const ASCII_MAPS = {
   REACT_MUI: `
     ➤🌐 https://unpkg.com
     │
-    ├──🔗 react@latest/umd/react.production.min.js
-    ├──🔗 react-dom@latest/umd/react-dom.production.min.js
+    ├──🔗 react@@18.3.1/umd/react.production.min.js
+    ├──🔗 react-dom@@18.3.1/umd/react-dom.production.min.js
     ├──🔗 @babel/standalone/babel.min.js
-    └──🔗 @mui/material@latest/umd/material-ui.production.min.js
+    └──🔗 @mui/material@5.16.7/umd/material-ui.production.min.js
     `,
   YOUTUBELITE: `
     📦 https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js
