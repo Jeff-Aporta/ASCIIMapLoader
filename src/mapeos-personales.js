@@ -14,8 +14,8 @@ const ASCII_MAPS = {
   REACT_MUI: `
     ➤🌐 https://unpkg.com
     │
-    ├──🔗 react@@18.3.1/umd/react.production.min.js
-    ├──🔗 react-dom@@18.3.1/umd/react-dom.production.min.js
+    ├──🔗 react@18.3.1/umd/react.production.min.js
+    ├──🔗 react-dom@18.3.1/umd/react-dom.production.min.js
     ├──🔗 @babel/standalone@7.25.5/babel.min.js
     └──🔗 @mui/material@5.16.7/umd/material-ui.production.min.js
     `,
