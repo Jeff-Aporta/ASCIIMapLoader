@@ -40,7 +40,7 @@ const _ASCIIMapLoader_ = (() => {
                                 }}
                             >
                                 <lite-youtube
-                                    videoid="B0kZDcAJUb8"
+                                    videoid="O8n0Gc5xYxw"
                                 />
                             </div>
                             <h2>
