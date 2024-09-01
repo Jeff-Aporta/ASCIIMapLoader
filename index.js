@@ -278,12 +278,14 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
 
             if (padre.folder != undefined && determinarNivel > padre.nivel) {
               console.log("bif 1");
+              console.log(newRoot);
               padre.list.push(newRoot);
               generarArbol({
                 padre: newRoot,
               });
             } else {
               console.log("bif 2");
+              console.log(newRoot);
               generarArbol({
                 padre: padre.padre,
                 node: newRoot,
