@@ -265,6 +265,10 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
               }
             }
 
+            if (renglon.endsWith(".mjs")) {
+              type = "module";
+            }
+
             const newRoot = {
               padre,
               archivo: renglon,
@@ -279,10 +283,7 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
               });
             } else {
               generarArbol({
-                padre: {
-                  ...padre.padre,
-                  type,
-                },
+                padre: padre.padre,
                 node: newRoot,
               });
             }
