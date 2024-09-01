@@ -279,7 +279,10 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
               });
             } else {
               generarArbol({
-                padre: padre.padre,
+                padre: {
+                  ...padre.padre,
+                  type,
+                },
                 node: newRoot,
               });
             }
