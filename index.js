@@ -46,7 +46,7 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
 
     function intuirExtension() {
       const isJSX = archivo.endsWith(".jsx");
-      const isJS = archivo.endsWith(".js");
+      const isJS = [".js", ".mjs"],some(ext => archivo.endsWith(ext))
       const isCSS = archivo.endsWith(".css");
       if (isJSX || isJS) {
         protocoloDeExtensionQuemada();
@@ -59,6 +59,8 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
       function protocoloDeExtensionTipada() {
         switch (type) {
           case "module":
+            ext = ".mjs";
+            break;
           case "text/javascript":
             ext = ".js";
             break;
