@@ -35,18 +35,23 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
 
     intuirExtension();
 
-    let stringLoad =
-      ext == ".css"
-        ? `<link rel="stylesheet" href="${archivo}">`
-        : `<script type="${type}" src="${archivo}${ext ?? ""}" ${
-            defer ? "defer" : ""
-          }><\/script>`;
+    let stringLoad = (() => {
+      if (ext == ".css") {
+        return `<link rel="stylesheet" href="${archivo}">`;
+      } else {
+        return `<script type="${type}" src="${archivo}${ext ?? ""}" ${
+          defer ? "defer" : ""
+        }><\/script>`;
+      }
+    })();
+
+    console.log(stringLoad);
 
     document.write(stringLoad);
 
     function intuirExtension() {
       const isJSX = archivo.endsWith(".jsx");
-      const isJS = [".js", ".mjs"].some(ext => archivo.endsWith(ext))
+      const isJS = [".js", ".mjs"].some((ext) => archivo.endsWith(ext));
       const isCSS = archivo.endsWith(".css");
       if (isJSX || isJS) {
         protocoloDeExtensionQuemada();
@@ -255,8 +260,8 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
 
             if (renglon.includes(decoradores.JSModule)) {
               type = "module";
-              if (!renglon.endsWith(".js")) {
-                renglon += ".js";
+              if (!renglon.endsWith(".mjs") && !renglon.endsWith(".js")) {
+                renglon += ".mjs";
               }
             }
 
