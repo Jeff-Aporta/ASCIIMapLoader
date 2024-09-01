@@ -52,8 +52,9 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
     function intuirExtension() {
       const isJSX = archivo.endsWith(".jsx");
       const isJS = archivo.endsWith(".js");
+      const isMJS = archivo.endsWith(".mjs");
       const isCSS = archivo.endsWith(".css");
-      if (isJSX || isJS) {
+      if (isJSX || isJS || isMJS) {
         protocoloDeExtensionQuemada();
       } else if (!isCSS) {
         protocoloDeExtensionTipada();
@@ -76,7 +77,9 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
       }
 
       function protocoloDeExtensionQuemada() {
-        if (isJSX) {
+        if (isMJS) {
+          type = "module";
+        } else if (isJSX) {
           type = "text/babel";
         } else if (isJS && type != "module") {
           type = "text/javascript";
