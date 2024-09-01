@@ -277,11 +277,13 @@ function runASCIIMapLoader_inLine(asciiMaploader) {
             };
 
             if (padre.folder != undefined && determinarNivel > padre.nivel) {
+              console.log("bif 1");
               padre.list.push(newRoot);
               generarArbol({
                 padre: newRoot,
               });
             } else {
+              console.log("bif 2");
               generarArbol({
                 padre: padre.padre,
                 node: newRoot,
